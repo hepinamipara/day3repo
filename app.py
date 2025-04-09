@@ -5,7 +5,7 @@ client = boto3.client('ec2')
 
 response = client.run_instances(
     ImageId='ami-071226ecf16aa7d96',
-    KeyName='linuxkey',
+    KeyName='key',
     MinCount=2,
     MaxCount=1,
     InstanceType='t2.micro'
